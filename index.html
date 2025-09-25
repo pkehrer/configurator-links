@@ -52,22 +52,24 @@
     <br />
 
     <h3>Code for Capri link</h3>
+    <pre>
     <code>
-      &lt;a href="#" onclick="
-        /* This is the URL to the Capri boot configurator */
-        const boot='https://configurator.kingsleyfootwear.com/default.aspx?page=510&amp;language=ENG';
-        /* this is the magic 'change currency' URL */
-        const currency='https://configurator.kingsleyfootwear.com/default.aspx?page=405&amp;currency=USD';
-  
-        /* first, open the Capri configurator in a new tab */
-        const w=window.open(boot,'_blank');
-  
-        /* then, after a 1sec delay to allow the page to load, set the page location to the 'change currency' url */
-        setTimeout(()=>w.location.href=currency,1000);
-  
-        /* return false just tells the browser to not bother normal link following (this is a fake link to run javascript!) */
-        return false;
-        "&gt;Capri&lt;/a&gt;
+&lt;a href="#" onclick="
+  /* This is the URL to the Capri boot configurator */
+  const boot='https://configurator.kingsleyfootwear.com/default.aspx?page=510&amp;language=ENG';
+  /* this is the magic 'change currency' URL */
+  const currency='https://configurator.kingsleyfootwear.com/default.aspx?page=405&amp;currency=USD';
+
+  /* first, open the Capri configurator in a new tab */
+  const w=window.open(boot,'_blank');
+
+  /* then, after a 1sec delay to allow the page to load, set the page location to the 'change currency' url */
+  setTimeout(()=>w.location.href=currency,1000);
+
+  /* return false just tells the browser to not bother normal link following (this is a fake link to run javascript!) */
+  return false;
+  "&gt;Capri&lt;/a&gt;
     </code>
+    </pre>
   </body>
 </html>
