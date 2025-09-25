@@ -6,12 +6,17 @@
     <h1>Configurator Links</h1>
 
     <a href="#" onclick="
-      const currency='https://configurator.kingsleyfootwear.com/default.aspx?page=405&currency=USD';
       const boot='https://configurator.kingsleyfootwear.com/default.aspx?page=510&language=ENG';
+      const currency='https://configurator.kingsleyfootwear.com/default.aspx?page=405&currency=USD';
       const w=window.open(boot,'configurator_window');
-      setTimeout(()=>{
-        try{w.location.href=currency;}catch(_){window.open(boot,'configurator_window');}}
-        ,1200);
+      setTimeout(()=>w.location.href=currency,1200);
       return false;">Capri</a>
+
+    <a href="#" onclick="
+      const boot='https://configurator.kingsleyfootwear.com/default.aspx?page=186&language=ENG';
+      const currency='https://configurator.kingsleyfootwear.com/default.aspx?page=405&currency=USD';
+      const w=window.open(boot,'configurator_window');
+      setTimeout(()=>w.location.href=currency,1200);
+      return false;">London</a>
   </body>
 </html>
