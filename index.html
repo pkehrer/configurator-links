@@ -4,5 +4,13 @@
   </head>
   <body>
     <h1>Configurator Links</h1>
+
+    <a onclick="(const currency='https://configurator.kingsleyfootwear.com/default.aspx?page=405&currency=USD';
+      const boot='https://configurator.kingsleyfootwear.com/default.aspx?page=510&language=ENG';
+      const w=window.open(boot,'configurator_window');
+      setTimeout(()=>{
+        try{w.location.href=currency;}catch(_){window.open(boot,'configurator_window');}}
+        ,1200);
+      return false">Capri</a>
   </body>
 </html>
